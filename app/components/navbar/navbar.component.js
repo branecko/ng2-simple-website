@@ -6,23 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
-var navbar_component_1 = require("./components/navbar/navbar.component");
-var AppModule = (function () {
-    function AppModule() {
+var NavbarComponent = (function () {
+    function NavbarComponent() {
+        this.branding = 'ng2 simple website';
     }
-    return AppModule;
+    return NavbarComponent;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [
-            app_component_1.AppComponent,
-            navbar_component_1.NavbarComponent
-        ],
-        bootstrap: [app_component_1.AppComponent]
+NavbarComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'nav-bar',
+        templateUrl: 'navbar.component.html'
     })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], NavbarComponent);
+exports.NavbarComponent = NavbarComponent;
+//# sourceMappingURL=navbar.component.js.map
